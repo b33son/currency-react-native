@@ -8,6 +8,10 @@ import ExtStyleSheet from "react-native-extended-stylesheet";
 
 //  https://github.com/vitalets/react-native-extended-stylesheet
 ExtStyleSheet.build({
-  $primaryBlue: "#4f6d7a"
+  $primaryBlue: "#4f6d7a",
+  $white: "#fff",
+  $border: "#E2E2E2",
+  $inputText: "#797979",
+  $itemDisabled: "#D3D3D3"
 });
 export default () => <Home />;
