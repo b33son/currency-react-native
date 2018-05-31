@@ -3,7 +3,8 @@
  */
 
 import React from "react";
-import Home from "./screens/home";
+//import Home from "./screens/home";
+import CurrencyList from "./screens/currency-list";
 import ExtStyleSheet from "react-native-extended-stylesheet";
 
 //  https://github.com/vitalets/react-native-extended-stylesheet
@@ -12,6 +13,7 @@ ExtStyleSheet.build({
   $white: "#fff",
   $border: "#E2E2E2",
   $inputText: "#797979",
-  $itemDisabled: "#D3D3D3"
+  $itemDisabled: "#D3D3D3",
+  $darkText: "#343434"
 });
-export default () => <Home />;
+export default () => <CurrencyList />;
