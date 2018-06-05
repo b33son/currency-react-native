@@ -4,8 +4,14 @@
 
 import React from "react";
 //import Home from "./screens/home";
-import CurrencyList from "./screens/currency-list";
+//import CurrencyList from "./screens/currency-list";
+import { Root } from "native-base";
+import Routes from "./config/routes";
 import ExtStyleSheet from "react-native-extended-stylesheet";
+import { Provider } from "react-redux";
+import store from "./config/store";
+// TODO:
+//import "./reducers";
 
 //  https://github.com/vitalets/react-native-extended-stylesheet
 ExtStyleSheet.build({
@@ -16,4 +22,10 @@ ExtStyleSheet.build({
   $itemDisabled: "#D3D3D3",
   $darkText: "#343434"
 });
-export default () => <CurrencyList />;
+export default () => (
+  <Provider store={store}>
+    <Root>
+      <Routes onNavigationStateChange={null} />
+    </Root>
+  </Provider>
+);

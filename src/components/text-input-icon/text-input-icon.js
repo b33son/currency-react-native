@@ -38,7 +38,13 @@ export default class TextInputIcon extends Component {
     return (
       <View style={styles.container}>
         <Item style={this.props.editable ? styles.item : styles.itemDisabled}>
-          <Button iconLeft transparent primary style={styles.button}>
+          <Button
+            iconLeft
+            transparent
+            primary
+            style={styles.button}
+            onPress={this.props.onClick}
+          >
             <View style={styles.buttonInner}>
               {/* <Icon
                 active

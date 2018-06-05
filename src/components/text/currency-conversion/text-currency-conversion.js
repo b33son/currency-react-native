@@ -17,7 +17,7 @@ const TextCurencyConversion = ({
 }) => (
   <View style={styles.wrapper}>
     <Text style={styles.text}>
-      1 {baseCurrency} = {conversionRate} {quoteCurrency} as of{" "}
+      1 {baseCurrency} = {conversionRate.toFixed(2)} {quoteCurrency} as of{" "}
       {moment(date).format("MMMM D, YYYY")}
     </Text>
   </View>
